@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackrabbit</title>
+    <style>
+        canvas{
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #cursor{
+            position: absolute;
+            z-index: 9999;
+            
+            top: calc(50% - 1vh);
+            left: calc(25% - 1vh);
+            height:2vh;
+            width:2vh;
+            border-radius: 50%;
+            border: 0.2vh solid white;
+            mix-blend-mode: difference;
+        }
+        #cursor2{
+            position: absolute;
+            z-index: 9999;
+            
+            top: calc(50% - 1vh);
+            left: calc(75% - 1vh);
+            height:2vh;
+            width:2vh;
+            border-radius: 50%;
+            border: 0.2vh solid white;
+            mix-blend-mode: difference;
+        }
+        #scoreboard{
+            position: absolute;
+            color: white;
+            text-align: center;
+            top: 2%;
+            width: 100%;
+            z-index: 9999;
+            font-family: arial;
+            font-size: 4vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+    <div id="scoreboard">0 - 0</div>
+</body>
+<script src="libs.js"></script>
+<script src="animation.js"></script>
+<script src="rendering.js"></script>
+<script src="graphics.js"></script>
+<script src="player.js"></script>
+<script src="ball.js"></script>
+<script src="game.js"></script>
+</html>
